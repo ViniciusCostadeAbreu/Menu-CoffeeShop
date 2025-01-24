@@ -1,0 +1,7 @@
+capuccino
+latte
+spanish latte
+americano
+mocha
+expresso
+cortado
