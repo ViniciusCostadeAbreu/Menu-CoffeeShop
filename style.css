@@ -1,5 +1,18 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'coffeetown';
+    src: url('fontes/CoffeeTown.otf') format('opentype'),
+         url('fontes/CoffeeTown.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+    font-family: 'lemon';
+    src: url('fontes/lemon.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+};
+
 *{
     margin: 0px;
     padding: 0px;
@@ -7,4 +20,46 @@
 
 body{
     background-image: url(imagens/cafe.jpg);
+    max-width: 2560px;
+    max-height: 1440px;
+    margin: 0px;
+}
+
+header{
+    max-height: 150px;
+}
+
+header h1{
+    font-family: 'coffeetown';
+    font-size: 5em;
+    color: white;
+    text-align: center;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: #000;
+}
+
+section {
+    max-width: 400px;
+    margin: auto;
+    background-color: white;
+}
+
+section h2{
+    font-family: 'coffeetown';
+    text-align: center;
+}
+
+section .item{
+    font-family: 'lemon';
+    font-weight: bolder;
+    font-size: 1em;
+    display: inline-block;
+    text-align: left;
+    width: 75%;
+}
+
+section .preco{
+    display: inline-block;
+    text-align: right;
+    width: 25%;
 }
