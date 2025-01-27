@@ -7,10 +7,14 @@
     font-weight: normal;
     font-style: normal;
 
-    font-family: 'lemon';
-    src: url('fontes/lemon.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+    
+}
+
+    @font-face {
+        font-family: 'lemon';
+        src: url('fontes/lemon.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
 };
 
 *{
@@ -41,12 +45,14 @@ header h1{
 section {
     max-width: 400px;
     margin: auto;
-    background-color: white;
+    background-color: #ececec;
+    border-radius: 10px;
 }
 
 section h2{
     font-family: 'coffeetown';
     text-align: center;
+    padding-top: 10px;
 }
 
 section .item{
@@ -55,11 +61,16 @@ section .item{
     font-size: 1em;
     display: inline-block;
     text-align: left;
-    width: 75%;
+    width: 65%;
+    margin: 10px 10px;
+    
 }
 
 section .preco{
     display: inline-block;
-    text-align: right;
+    text-align: center;
     width: 25%;
+    margin: 10px 10px;
+    font-family: 'lemon';
+    font-weight: bolder;
 }
