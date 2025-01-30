@@ -30,29 +30,46 @@ body{
 }
 
 header{
-    max-height: 150px;
+    max-height: 100px;
 }
 
 header h1{
-    font-family: 'coffeetown';
+    max-height: 100px;
+    font-family: 'lemon';
     font-size: 5em;
-    color: white;
+    margin: 40px;
+    color: rgb(252, 221, 184);
     text-align: center;
-    -webkit-text-stroke-width: 0.1px;
-    -webkit-text-stroke-color: #000;
+    text-shadow: 3px 3px rgb(0, 0, 0);
+    /*-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;*/
+}
+main{
+    max-width:860px;
+    margin: auto;
 }
 
 section {
+    display: inline-block;
     max-width: 400px;
-    margin: auto;
-    background-color: #ececec;
+    background-color: rgb(252, 221, 184);
     border-radius: 10px;
+    border-style: groove;
+    border-color: black;
+    padding-bottom: 10px;
+    margin: 0px 10px;
 }
 
+
 section h2{
-    font-family: 'coffeetown';
+    font-family: 'lemon';
     text-align: center;
-    padding-top: 10px;
+    padding-top: 0px;
+}
+
+
+section hr{
+    margin: 10px 25px;
 }
 
 section .item{
@@ -61,16 +78,21 @@ section .item{
     font-size: 1em;
     display: inline-block;
     text-align: left;
-    width: 65%;
-    margin: 10px 10px;
+    width: 58%;
+    margin: 10px 25px;
     
 }
 
 section .preco{
     display: inline-block;
-    text-align: center;
-    width: 25%;
+    text-align: right;
+    
     margin: 10px 10px;
     font-family: 'lemon';
     font-weight: bolder;
+    margin: 10px 25px;
+}
+
+section .preco::before{
+    content: 'R$';
 }
