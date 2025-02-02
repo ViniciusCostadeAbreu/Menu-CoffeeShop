@@ -21,12 +21,13 @@
     margin: 0px;
     padding: 0px;
 }
-
+html, body{
+    height: 100%;
+}
 body{
     background-image: url(imagens/cafe.jpg);
-    max-width: 2560px;
-    max-height: 1440px;
     margin: 0px;
+    padding: 0px;
 }
 
 header h1{
@@ -41,7 +42,7 @@ header h1{
 }
 main{
     max-width:837px;
-    display: block;
+    /*display: block;*/
     text-align: center;
     margin: auto;
 }
@@ -58,7 +59,10 @@ section {
 }
 
 #section1{
-    margin: 0px 20px 0px 0px;
+    margin: 5px;
+}
+#section2{
+    margin: 5px;
 }
 
 section > article{
@@ -69,6 +73,13 @@ article h2{
     font-family: 'lemon';
     text-align: center;
     padding-top: 0px;
+}
+#coffee::after{
+    content: ' 'url(imagens/xicara-de-cafe30px.png)
+}
+
+#food::after{
+    content: ' 'url(imagens/hamburguer25px.png)
 }
 
 
@@ -99,4 +110,32 @@ article > .preco{
 
 article .preco::before{
     content: 'R$';
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.596);
+    /*position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;*/
+}
+
+footer > p{
+    text-align: center;
+    color: rgb(252, 221, 184);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    margin: 20px 0px 0px 0px;
+    padding: 2px;
+    text-shadow: 3px 3px 3px black;
+}
+
+footer > p > a{
+    text-decoration: none;
+    color: rgb(252, 221, 184);
+    font-weight: bold;
+}
+
+footer > p > a:hover{
+    text-decoration: underline;
 }
