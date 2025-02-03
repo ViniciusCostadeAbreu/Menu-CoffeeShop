@@ -63,6 +63,7 @@ section {
 }
 #section2{
     margin: 5px;
+    padding-top: 4px;
 }
 
 section > article{
@@ -114,10 +115,10 @@ article .preco::before{
 
 footer{
     background-color: rgba(0, 0, 0, 0.596);
-    /*position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
-    left: 0;*/
+    left: 0;
 }
 
 footer > p{
@@ -125,7 +126,7 @@ footer > p{
     color: rgb(252, 221, 184);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8em;
-    margin: 20px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     padding: 2px;
     text-shadow: 3px 3px 3px black;
 }
