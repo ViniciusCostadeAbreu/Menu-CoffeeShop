@@ -37,12 +37,9 @@ header h1{
     color: rgb(252, 221, 184);
     text-align: center;
     text-shadow: 3px 3px rgb(0, 0, 0);
-    /*-webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #000;*/
 }
 main{
     max-width:837px;
-    /*display: block;*/
     text-align: center;
     margin: auto;
 }
@@ -55,7 +52,6 @@ section {
     border-style: groove;
     border-color: black;
     padding-bottom: 10px;
-    /*margin: 0px 10px 0px 0px;*/
 }
 
 #section1{
